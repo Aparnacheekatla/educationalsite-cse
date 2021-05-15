@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  outline: none;
+  font-family: Roboto;
+}
+body{
+  background: lavenderblush;
+  margin: 0%;
+  
+}
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+.nav_bar{
+  background: rgb(46,125,6);
+  min-height: 60px;
+  color: #fff;
+}
+.card img{
+  height: 240px;
+  width: 250px;
+  border-radius: 10%;
+}
+.nav_logo{
+  height: 50px;
+  width: 50px;
+}
+
+.nav_c{
+  padding: 0px 20px;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-bg{
+  background: rgb(92,211,153);
+}
+.side_li li:hover{
+  background: rgb(206, 206, 206);
+}
+.side_li li a{
+  text-decoration: none;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.671);
+
+}
+.sem-title{
+  font-weight: bolder;
+  color: rgb(51, 51, 51);
+}
+
+.h4_mar h4{
+  margin:10px 0px 30px;
+}
